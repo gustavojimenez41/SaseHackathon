@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sase_hackathon/screens/maps.dart';
+import 'package:sase_hackathon/screens/bluetooth.dart';
+import 'package:sase_hackathon/screens/profile.dart';
 
 void main() {
   runApp(MyApp());
@@ -48,8 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   final List<Widget> _widgetOptions = [
     MapsPage(),
-    MapsPage(),
-    MapsPage(),
+    BluetoothPage(),
+    ProfilePage(),
   ];
 
   void _onItemTapped(int index) {

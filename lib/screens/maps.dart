@@ -9,7 +9,7 @@ class _MapsPageState extends State<MapsPage> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text("This is Map page"),
+      child: Text("This is Maps page"),
     );
   }
 }
