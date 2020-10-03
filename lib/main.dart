@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Sase Hackathon',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         // This makes the visual density adapt to the platform that you run
@@ -47,15 +47,15 @@ class _MyHomePageState extends State<MyHomePage> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     Text(
-      'Index 0: Home',
+      'Index 0: Map',
       style: optionStyle,
     ),
     Text(
-      'Index 1: Business',
+      'Index 1: Bluetooth',
       style: optionStyle,
     ),
     Text(
-      'Index 2: School',
+      'Index 2: Profile',
       style: optionStyle,
     ),
   ];
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BottomNavigationBar Sample'),
+        title: const Text("Corona Tracker"),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -78,16 +78,16 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text("bleh"),
+            icon: Icon(Icons.map),
+            title: Text("Map"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            title: Text("bleh"),
+            icon: Icon(Icons.bluetooth),
+            title: Text("Close Contact"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            title: Text("bleh"),
+            icon: Icon(Icons.person),
+            title: Text("Profile"),
           ),
         ],
         currentIndex: _selectedIndex,
