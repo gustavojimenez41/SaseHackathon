@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sase_hackathon/screens/maps.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,19 +46,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Map',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Bluetooth',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Profile',
-      style: optionStyle,
-    ),
+  final List<Widget> _widgetOptions = [
+    MapsPage(),
+    MapsPage(),
+    MapsPage(),
   ];
 
   void _onItemTapped(int index) {
