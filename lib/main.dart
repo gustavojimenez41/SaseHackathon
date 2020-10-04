@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sase_hackathon/screens/maps.dart';
 import 'package:sase_hackathon/screens/bluetooth.dart';
 import 'package:sase_hackathon/screens/profile.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(),
     );
   }
 }
