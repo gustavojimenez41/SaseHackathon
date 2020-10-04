@@ -30,7 +30,7 @@ class MapSampleState extends State<MapSample> {
     _circles.add(
       Circle(
           circleId: CircleId("0"),
-          center: LatLng(37.76493, -122.42432),
+          center: LatLng(37.77493, -122.40732),
           radius: 200,
           strokeWidth: 2,
           fillColor: Colors.red[300].withOpacity(0.5)),
@@ -42,14 +42,41 @@ class MapSampleState extends State<MapSample> {
           center: LatLng(37.75493, -122.42432),
           radius: 500,
           strokeWidth: 2,
-          fillColor: Colors.red[300].withOpacity(0.5)),
+          fillColor: Colors.red[300].withOpacity(0.8)),
       // fillColor: Color.fromRGBO(102, 51, 153, .5)),
     );
     _circles.add(
       Circle(
           circleId: CircleId("2"),
-          center: LatLng(37.75493, -122.43432),
+          center: LatLng(37.75493, -122.44432),
           radius: 250,
+          strokeWidth: 2,
+          fillColor: Colors.red[300].withOpacity(0.2)),
+      // fillColor: Color.fromRGBO(102, 51, 153, .5)),
+    );
+    _circles.add(
+      Circle(
+          circleId: CircleId("3"),
+          center: LatLng(37.79493, -122.41432),
+          radius: 400,
+          strokeWidth: 2,
+          fillColor: Colors.red[300].withOpacity(0.6)),
+      // fillColor: Color.fromRGBO(102, 51, 153, .5)),
+    );
+    _circles.add(
+      Circle(
+          circleId: CircleId("4"),
+          center: LatLng(37.77493, -122.43432),
+          radius: 600,
+          strokeWidth: 2,
+          fillColor: Colors.red[300].withOpacity(1.0)),
+      // fillColor: Color.fromRGBO(102, 51, 153, .5)),
+    );
+    _circles.add(
+      Circle(
+          circleId: CircleId("5"),
+          center: LatLng(37.74493, -122.40032),
+          radius: 350,
           strokeWidth: 2,
           fillColor: Colors.red[300].withOpacity(0.5)),
       // fillColor: Color.fromRGBO(102, 51, 153, .5)),
