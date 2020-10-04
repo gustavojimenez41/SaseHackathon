@@ -33,7 +33,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
             Padding(
-                padding: EdgeInsets.only(top: 64.0),
+                padding: EdgeInsets.only(top: 30.0),
                 child: Column(
                     children: <Widget>[
                       Row(
@@ -69,6 +69,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             fontSize: 16.0,
                             color: Colors.white54),
                       ),
+                      SizedBox(height: 10.0),
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.black87,
@@ -93,6 +94,52 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 padding: EdgeInsets.all(8.0),
                 child: Icon(Icons.settings, color: Colors.white),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top:250.0),
+              decoration: BoxDecoration(
+                color: Colors.lightBlueAccent,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20.0),
+                    topRight: Radius.circular(20.0),
+                )
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 250.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
+                  ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: GridView.builder(
+                  itemCount: 8,
+                  itemBuilder: (context, index) => Card(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: Colors.white,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          Icon(
+                            Icons.local_hospital,
+                            size: 90,
+                          ),
+                          Text(
+                            "Corona Virus",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                ),
               ),
             ),
           ],
