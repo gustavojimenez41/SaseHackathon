@@ -62,24 +62,32 @@ class _ProfilePageState extends State<ProfilePage> {
                           fontSize: 21.0,
                           color: Colors.white),
                       ),
+                      SizedBox(height: 13.0),
                       Text(
-                        "Founder of FEИTY",
+                        "Contagious Sites Visited: X/8",
                         style:TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0,
                             color: Colors.white54),
                       ),
-                      SizedBox(height: 10.0),
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.black87,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                        child: Text("Button",
-                          style: TextStyle(
+                      SizedBox(height: 12.0),
+                      Text(
+                        "Previous Locations",
+                        style:TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          )),
-                      )
+                            fontSize: 25.0,
+                            color: Colors.white),
+                      ),
+                      // MaterialButton(
+                      //   onPressed: () {},
+                      //   color: Colors.black87,
+                      //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+                      //   child: Text("Button",
+                      //     style: TextStyle(
+                      //       fontWeight: FontWeight.bold,
+                      //       color: Colors.white,
+                      //     )),
+                      // )
                     ],
                 ),
             ),
